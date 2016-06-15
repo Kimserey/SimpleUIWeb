@@ -1,0 +1,12 @@
+FRAMEWORK: >= NET40
+NUGET
+  remote: http://api.nuget.org/v3/index.json
+    IntelliFactory.Xml (0.6.63.95)
+    WebSharper (3.6.11.234)
+    WebSharper.Html (3.6.9.21)
+      IntelliFactory.Xml (>= 0.6.63.95)
+      WebSharper (>= 3.6.11.234)
+GITHUB
+  remote: Kimserey/SimpleUI
+    css/SimpleUI.css (1857beb8f49aa2a60bb54cf851a832b599e27962)
+    js/SimpleUI.js (1857beb8f49aa2a60bb54cf851a832b599e27962)
