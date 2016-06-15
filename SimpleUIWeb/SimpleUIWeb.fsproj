@@ -41,16 +41,14 @@
     <WarningLevel>3</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\paket-files\Kimserey\SimpleUI\js\SimpleUI.js">
-      <Link>Resources\SimpleUI.js</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\paket-files\Kimserey\SimpleUI\css\SimpleUI.css">
-      <Link>Resources\SimpleUI.css</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
     <Compile Include="Client.fs" />
     <Content Include="index.html" />
+    <EmbeddedResource Include="..\paket-files\Kimserey\SimpleUI\dist\css\SimpleUI.css">
+      <Link>Resources\SimpleUI.css</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\paket-files\Kimserey\SimpleUI\dist\js\SimpleUI.js">
+      <Link>Resources\SimpleUI.js</Link>
+    </EmbeddedResource>
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Compile Include="Global.asax.fs" />

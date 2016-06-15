@@ -17799,66 +17799,7 @@ var JSON;JSON||(JSON={}),function(){"use strict";function i(n){return n<10?"0"+n
  });
 }());
 
-var simpleUI = function ($) {
-
-    var toggleCard = function (el) {
-        var active = 'active';
-
-        function expendCard($this) {
-            $this.addClass(active);
-            $('#' + $this.data().content).addClass(active);
-        }
-
-        function hideCard($this) {
-            $this.removeClass(active);
-            $('#' + $this.data().content).removeClass(active);
-        }
-
-        function isActive($this) {
-            return $this.hasClass(active);
-        }
-
-        var $this = $(el);
-
-        if (isActive($this)) {
-            hideCard($this);
-        } else {
-            expendCard($this);
-        }
-    };
-
-    var toggleSideMenu = function () {
-        var show = 'show';
-        var $sidemenu = $('#side-menu');
-        var $mask = $('#mask');
-
-        function hideMenu() {
-            $sidemenu.removeClass(show);
-            $mask.removeClass(show);
-        }
-
-        function showMenu() {
-            $sidemenu.addClass(show);
-            $mask.addClass(show);
-        }
-
-        function isActive() {
-            return $sidemenu.hasClass(show);
-        }
-
-        if (isActive()) {
-            hideMenu();
-        } else {
-            showMenu();
-        }
-    };
-    
-
-    return {
-        toggleCard: toggleCard,
-        toggleSideMenu: toggleSideMenu
-    };
-}(jQuery);;
+var simpleUI=function(a){var n=function(n){function s(n){n.addClass(o),a("#"+n.data().content).addClass(o)}function e(n){n.removeClass(o),a("#"+n.data().content).removeClass(o)}function t(a){return a.hasClass(o)}var o="active",r=a(n);t(r)?e(r):s(r)},s=function(){function n(){o.removeClass(t),r.removeClass(t)}function s(){o.addClass(t),r.addClass(t)}function e(){return o.hasClass(t)}var t="show",o=a("#side-menu"),r=a("#mask");e()?n():s()};return{toggleCard:n,toggleSideMenu:s}}(jQuery);;
 (function()
 {
  var Global=this,Runtime=this.IntelliFactory.Runtime,console,SimpleUIWeb,Client;
