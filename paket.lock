@@ -10,5 +10,5 @@ NUGET
       WebSharper (>= 3.6.11.234)
 GITHUB
   remote: Kimserey/SimpleUI
-    css/SimpleUI.css (1857beb8f49aa2a60bb54cf851a832b599e27962)
-    js/SimpleUI.js (1857beb8f49aa2a60bb54cf851a832b599e27962)
+    css/SimpleUI.css (69621b585c8a51043a900406caa5b426d8aee413)
+    js/SimpleUI.js (69621b585c8a51043a900406caa5b426d8aee413)
