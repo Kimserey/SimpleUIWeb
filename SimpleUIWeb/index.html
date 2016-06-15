@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>SimpleUIWeb</title>
@@ -8,6 +8,140 @@
     <script type="text/javascript" src="Content/SimpleUIWeb.head.js"></script>
 </head>
 <body>
+    <header>
+        Expenses - Sorted per month
+    </header>
+
+    <nav>
+        <button id="side-menu-button" class="nav-menu" onclick="simpleUI.toggleSideMenu()">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div id="side-menu">
+            <div class="brand">
+                Data expenses
+            </div>
+            <dl>
+                <dt>
+                    Expenses
+                </dt>
+                <dd>
+                    <a> Per month </a>
+                    <a> Per category </a>
+                </dd>
+                <dt>
+                    Shops
+                </dt>
+                <dd>
+                    <a> All shops</a>
+                </dd>
+            </dl>
+        </div>
+    </nav>
+
+    <div class="card">
+        <div class="card-title">
+            April 2016
+            <div class="amount">
+                -20.00
+            </div>
+        </div>
+        <div class="card-content">
+            <div class="card-list-item" id="item-1" data-content="lens-1" onclick="simpleUI.toggleCard(this)">
+                <div class="card-list-item-header">
+                    <div class="card-list-item-header-title">
+                        Supermarket
+                    </div>
+                    <div class="card-list-item-header-subtitle">
+                        <div class="amount">10.00</div>
+                    </div>
+                </div>
+                <div id="lens-1" class="card-list-item-content">
+                    <div class="table-card">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Label</th>
+                                    <th class="right">Amount</th>
+                                    <th>Category</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>4/28/2016</td>
+                                    <td>WAITROSE</td>
+                                    <td class="money">-17.9</td>
+                                    <td>Supermarket</td>
+                                </tr>
+                                <tr>
+                                    <td>4/28/2016</td>
+                                    <td>M&amp;S</td>
+                                    <td class="money">-20.61</td>
+                                    <td>Supermarket</td>
+                                </tr>
+                                <tr>
+                                    <td>4/27/2016</td>
+                                    <td>CASH WITHDRAW</td>
+                                    <td class="money">-100</td>
+                                    <td>Cash</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-list-item" id="item-2" data-content="lens-2" onclick="simpleUI.toggleCard(this)">
+                <div class="card-list-item-header">
+                    <div class="card-list-item-header-title">
+                        Supermarket
+                    </div>
+                    <div class="card-list-item-header-subtitle">
+                        <div class="amount">10.00</div>
+                    </div>
+                </div>
+                <div id="lens-2" class="card-list-item-content">
+                    <div class="table-card">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Label</th>
+                                    <th class="right">Amount</th>
+                                    <th>Category</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>4/28/2016</td>
+                                    <td>WAITROSE</td>
+                                    <td class="money">-17.9</td>
+                                    <td>Supermarket</td>
+                                </tr>
+                                <tr>
+                                    <td>4/28/2016</td>
+                                    <td>M&amp;S</td>
+                                    <td class="money">-20.61</td>
+                                    <td>Supermarket</td>
+                                </tr>
+                                <tr>
+                                    <td>4/27/2016</td>
+                                    <td>CASH WITHDRAW</td>
+                                    <td class="money">-100</td>
+                                    <td>Cash</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="mask" onclick="simpleUI.toggleSideMenu()"></div>
+
     <script type="text/javascript" src="Content/SimpleUIWeb.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+document.write("<script src=\"http://code.jquery.com/jquery-1.11.2.min.js\" type=\"text/javascript\" charset=\"UTF-8\">\r\n\r\n</script><!--[if lte IE 7.0]>\r\n<![endif]-->\r\n<script src=\"https://use.fontawesome.com/269e7d57ca.js\" type=\"text/javascript\" charset=\"UTF-8\">\r\n\r\n</script>")

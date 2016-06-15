@@ -43,9 +43,11 @@
   <ItemGroup>
     <EmbeddedResource Include="..\paket-files\Kimserey\SimpleUI\js\SimpleUI.js">
       <Link>Resources\SimpleUI.js</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="..\paket-files\Kimserey\SimpleUI\css\SimpleUI.css">
       <Link>Resources\SimpleUI.css</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <Compile Include="Client.fs" />
     <Content Include="index.html" />
@@ -218,6 +220,25 @@
         <Reference Include="WebSharper.Html.Server">
           <HintPath>..\packages\WebSharper.Html\lib\net40\WebSharper.Html.Server.dll</HintPath>
           <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Choose>
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.0' Or $(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2')">
+      <ItemGroup>
+        <Reference Include="WebSharper.UI.Next.Templating">
+          <HintPath>..\packages\WebSharper.UI.Next\lib\net40\WebSharper.UI.Next.Templating.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="WebSharper.UI.Next">
+          <HintPath>..\packages\WebSharper.UI.Next\lib\net40\WebSharper.UI.Next.dll</HintPath>
+          <Private>True</Private>
+          <Paket>True</Paket>
+        </Reference>
+        <Reference Include="System.Runtime.Caching">
           <Paket>True</Paket>
         </Reference>
       </ItemGroup>
